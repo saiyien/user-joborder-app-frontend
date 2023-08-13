@@ -39,6 +39,10 @@ Before you begin, ensure you have met the following requirements:
 
 3.  Open your browser and navigate to the URL to access the application.
 
-4.  Navigate to the user details page by clicking on a user's name from the user list.
+4.  First create a new user before you can login with the created user email.
 
-5.  You will see user details and a map displaying the job order pickup and dropoff points.
+5.  You have to login first to get the token before can list all the created user.
+
+6.  Navigate to the user details page by clicking on a user's name from the user list.
+
+7.  You will see user details and a map displaying the job order pickup and dropoff points.
