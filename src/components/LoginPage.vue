@@ -18,7 +18,7 @@
     name: "LoginPage",
     data() {
       return {
-        email: "spiderman@gmail.com",
+        email: "@gmail.com",
       };
     },
     methods: {

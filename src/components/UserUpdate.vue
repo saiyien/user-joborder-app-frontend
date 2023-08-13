@@ -5,15 +5,26 @@
     <p></p>
     <h1>Update User</h1>
     <form @submit.prevent="updateUser">
-      <label>_id:</label>
-      <input v-model="userId" type="text" size="30" disabled />
+      <label for="name">Name:</label>&nbsp;
+      <input v-model="name" type="text" id="name" />
+      &nbsp;&nbsp;<br><br>
+      <label for="email">Email:</label>&nbsp;
+      <input v-model="email" type="email" id="email" />
+      &nbsp;&nbsp;<br><br>
+      <label for="companyName">CompanyName:</label>&nbsp;
+      <input v-model="companyName" type="text" id="companyName" />
+      &nbsp;&nbsp;<br><br>
+      <label for="remarks">Remarks:</label>&nbsp;
+      <input v-model="remarks" type="text" id="remarks" />
+      &nbsp;&nbsp;<br><br>
+      <label for="image">Image URL:</label>&nbsp;
+      <input v-model="image" type="text" id="image" />
+      &nbsp;&nbsp;<br><br>
+      <label for="jobOrders">Job Orders:</label>
+      &nbsp;&nbsp;<br><br>
+      <textarea id="jobOrders" v-model="jobOrders" rows="15" cols="100">
+            </textarea>
       <br><br>
-      <label>Name:</label>&nbsp;
-      <input v-model="name" type="text" />
-      &nbsp;&nbsp;
-      <label>Email:</label>&nbsp;
-      <input v-model="email" type="text" />
-      &nbsp;&nbsp;
       <button type="submit" class="btn btn-primary">Update</button>
     </form>
   </div>
@@ -28,7 +39,8 @@ export default {
     return {
       userId: this.$route.params.id,
       name: "",
-      email: "",
+      email: "@gmail.com",
+      jobOrders: '{ "pickup": { "latitude": 3.085240600234782, "longitude": 101.67411571863492, "address": "Pearl Suria Residence" }, "dropoff": { "latitude": 3.0813456806845263, "longitude": 101.67049910187754, "address": "Midsummer Night" }, "_id": "64d844047068ed7f23c05655" }',
     };
   },
   methods: {

@@ -3,9 +3,11 @@
     <h1>Home</h1>
     <p>Welcome to the User Job Order App!</p>
     <p></p>
+    <button @click="goToCreateUser" class="btn btn-success">Create New User</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;
     <button @click="navigateToUserLogin" class="btn btn-primary">Go to Login</button>
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <button @click="navigateToUserList" class="btn btn-success">Show User List</button>
+    <button @click="navigateToUserList" class="btn btn-danger">Show User List</button>
   </div>
 </template>
 
@@ -14,6 +16,10 @@
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
+
+const goToCreateUser = () => {
+  router.push('/create-user'); // Navigate to the UserList route
+};
 
 const navigateToUserList = () => {
   router.push('/users'); // Navigate to the UserList route
