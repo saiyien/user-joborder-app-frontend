@@ -39,5 +39,4 @@ Before you begin, ensure you have met the following requirements:
 
 3.  Navigate to the user details page by clicking on a user's name from the user list.
 
-4.  You will see user details and a map displaying the user's location and job order pickup and dropoff 
-    points.
+4.  You will see user details and a map displaying the job order pickup and dropoff points.
